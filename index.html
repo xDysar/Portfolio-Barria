@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="./css/main.css">
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- AOS ANIMATION -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -54,7 +56,7 @@
             </div>
         </section>
 
-        <section class="section__two flex-row">
+        <section data-aos="fade-right" data-aos-duration="2000" data-aos-easing="ease-in-sine" data-aos-easing="linear" class="section__two flex-row">
             <div class="container">
                 <h2 class="section__two-title">¿Quien soy?</h2>
                 <div class="information flex-row">
@@ -70,7 +72,7 @@
 
         <section class="section__three">
             <div class="container">
-                <div class="tecnologies">
+                <div class="tecnologies" data-aos="fade-left" data-aos-duration="2000" data-aos-easing="ease-in-sine" data-aos-easing="linear">
                     <h3 class="tecnologies__title">Tecnologías</h3>
                     <div class="tecnologies__container">
                         <div class="tecnologies__square">
@@ -102,7 +104,7 @@
             </div>
         </section>
 
-        <section class="section__four">
+        <section class="section__four" data-aos="fade-right" data-aos-duration="2000" data-aos-easing="ease-in-sine" data-aos-easing="linear">
             <div class="container">
                 <h3>Mis proyectos</h3>
                 <div class="projects__container">
@@ -119,7 +121,7 @@
                     <div class="projects">
                         <img src="./img/instituto_pierre.jpg" alt="Logo instituto Pierre" class="projects__img">
                         <div class="projects__texts">
-                            <h4>Instituto NOA</h4>
+                            <h4>Instituto Pierre</h4>
                             <p>Desarollado con HTML, CSS, Bootstrap 5 y SASS</p>
                             <a href="#">Visitar sitio</a>
                         </div>
@@ -128,7 +130,7 @@
                     <div class="projects">
                         <img src="./img/jujuy_fashion_music.jpg" alt="Logo Jujuy Fashion Music" class="projects__img">
                         <div class="projects__texts">
-                            <h4>Instituto NOA</h4>
+                            <h4>Jujuy Fashion Music</h4>
                             <p>Desarollado con HTML, CSS, Bootstrap 5 y SASS</p>
                             <a href="#">Visitar sitio</a>
                         </div>
@@ -139,15 +141,17 @@
 
         <section class="section__six">
             <div class="container">
-                <h3>Contactame</h3>
-                <div class="form__container">
-                    <form class="form">
-                        <input type="text" placeholder="Nombre*" class="form__input">
-                        <input type="email" placeholder="Email*" class="form__input">
-                        <textarea class="form__input--message"></textarea>
-                        <input type="submit" class="form__cta">
-                    </form>
-                    <img src="./img/hand_coding.svg" alt="Foto de laptop" class="form__img">
+                <div class="section__animation" data-aos="fade-left" data-aos-duration="2000" data-aos-easing="ease-in-sine" data-aos-easing="linear">
+                    <h3>Contactame</h3>
+                    <div class="form__container">
+                        <form class="form">
+                            <input type="text" placeholder="Nombre*" class="form__input">
+                            <input type="email" placeholder="Email*" class="form__input">
+                            <textarea class="form__input--message"></textarea>
+                            <input type="submit" class="form__cta">
+                        </form>
+                        <img src="./img/hand_coding.svg" alt="Foto de laptop" class="form__img">
+                    </div>
                 </div>
             </div>
         </section>
@@ -161,11 +165,17 @@
                 <p class="foo__email"><span class="fa-solid fa-envelope"></span>lucasbnicolas@gmail.com</p>
                 <div class="foo__brands">
                     <a class="fa-brands fa-github" href="https://github.com/xDysar" target="_blank"></a>
-                    <a class="fa-brands fa-linkedin" href="https://www.linkedin.com/in/lucas-nicolas-barria/" target="_blank"></a>
+                    <a class="fa-brands fa-linkedin" href="https://www.linkedin.com/in/lucas-nicolas-barria/"
+                        target="_blank"></a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
