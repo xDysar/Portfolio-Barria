@@ -1,0 +1,86 @@
+.section__four {
+    padding: 10px;
+    background-color: #f2f2f2;
+
+    & h3 {
+        padding: 2rem 0;
+        font-size: 5em;
+        color: $color-black;
+    }
+
+    .projects__container {
+        padding: 15px;
+        display: grid;
+        gap: 20px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+        .projects {
+            background-color: $color-secondary;
+            border-radius: 10px;
+            text-align: center;
+            padding: 10px;
+
+            .projects__img {
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        .projects__texts {
+            color: $color-black;
+
+            & h4 {
+                font-size: 2.5em;
+                padding-top: 10px;
+                color: $color-terra;
+            }
+
+            & p {
+                font-size: 1.8em;
+                padding: 10px;
+                color: $color-white;
+            }
+
+            & a {
+                display: inline-block;
+                color: $color-white;
+                font-size: 1.8em;
+                padding: 1.5rem 2.5rem;
+                background-color: $color-terciary;
+                border-radius: 10px;
+                transition: all .3s ease-in-out;
+
+                &:hover {
+                    background-color: $color-primary;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 300px) {
+    .section__four .projects__container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .section__four .projects__container .projects .projects__img {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media (max-width: 380px) {
+    .section__four h3 {
+        font-size: 3em;
+    }
+
+    .section__four p {
+        font-size: 1.8em;
+    }
+}

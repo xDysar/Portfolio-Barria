@@ -1,0 +1,47 @@
+.footer {
+    background-color: $color-primary;
+    height: 20rem;
+}
+
+.foo {
+    height: 20rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .foo__title {
+        font-size: 2.5em;
+        font-weight: 700;
+        padding: 5px 0;
+    }
+
+    .foo__p {
+        font-size: 2em;
+        color: $color-terra;
+        padding: 5px 0;
+        font-weight: 500;
+    }
+
+    .foo__email {
+        font-size: 2em;
+        padding: 5px 0;
+    }
+
+    span {
+        padding-right: 10px;
+    }
+
+    & .fa-brands {
+        color: $color-white;
+        padding: 10px;
+        font-size: 5em;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.2);
+            color: $color-terra;
+        }
+    }
+}

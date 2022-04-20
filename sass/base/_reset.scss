@@ -1,0 +1,27 @@
+/* Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // overflow: hidden;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+}
+/* Globals */
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+    color: $color-white;
+}

@@ -1,0 +1,14 @@
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}

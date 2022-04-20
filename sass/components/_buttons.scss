@@ -1,0 +1,20 @@
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: $color-secondary;
+    color: $color-terra;
+    font-size: 2em;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        background-color: $color-primary;
+    }
+}
+
+@media (max-width: 300px) {
+    .btn {
+        padding: .8rem 1.5rem;
+        font-size: 1.5em;
+    }
+}

@@ -1,0 +1,40 @@
+.header {
+    background-color: $color-primary;
+    padding: 0 20px;
+}
+.navbar {
+    height: 8rem;
+    align-content: center;
+    justify-content: center;
+}
+
+.menu {
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+
+    .menu__link {
+        padding: 1rem 1.5rem;
+        border-bottom: 1px solid $color-primary;
+        font-size: 2em;
+        color: $color-terra;
+        transition: all .3s ease-in-out;
+        border-radius: 1rem;
+
+        &:hover {
+            border-bottom: 1px solid $color-white;
+            background-color: $color-white;
+            color: $color-black;
+        }
+    }
+}
+@media (max-width: 514px) {
+    .navbar {
+        display: none;
+    }
+}
+@media (max-width: 690px) {
+    .menu .menu__link {
+        font-size: 1.2em;
+    }
+}

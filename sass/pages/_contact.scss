@@ -1,0 +1,88 @@
+.section__six {
+    padding: 10px;
+    background-color: $color-terra;
+    
+    & h3 {
+        padding: 2rem 0;
+        font-size: 5em;
+        color: $color-black;
+    }
+
+    .form__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+
+        .form__img {
+            height: 450px;
+            width: 450px;
+        }
+    }
+
+
+    .form {
+        padding: 10px;
+        display: grid;
+        width: 40rem;
+        height: 40rem;
+        gap: 10px;
+
+        .form__input {
+            font-size: 1.8em;
+            outline: none;
+            border: none;
+            border: 1px solid $color-terciary;
+            border-radius: 7px;
+
+            &:focus {
+                border: 1px solid $color-terciary;
+            }
+        }
+
+        .form__input--message {
+            padding: 50px;
+            resize: none;
+            padding: 2.8em 1.5em;
+            margin-bottom: 1em;
+        }
+
+    }
+
+    .form__cta {
+        font-family: inherit;
+        background-color: $color-terciary;
+        color: #fff;
+        font-size: 2rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 400;
+        transition: all .3s ease-in-out;
+    
+        &:hover {
+            background-color: $color-secondary;
+        }
+    }
+}
+@media (max-width: 250px) {
+    .section__six .form .form__input {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 380px) {
+    .section__six h3 {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 640px) {
+    .section__six .form__container {
+        justify-content: center;
+        align-items: center;
+    }
+    .form__img {
+        display: none;
+    }
+}
