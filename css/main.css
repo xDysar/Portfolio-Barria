@@ -116,10 +116,14 @@ html {
       transform: scale(1.2);
       color: #CDB380; }
 
+@media (max-width: 312px) {
+  .foo .foo__email {
+    font-size: 1.3em; } }
+
 .hero {
   height: 92vh;
   width: 100%;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../../img/hero.jpg);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../img/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

@@ -45,3 +45,9 @@
         }
     }
 }
+
+@media (max-width: 312px) {
+    .foo .foo__email {
+        font-size: 1.3em;
+    }
+}
