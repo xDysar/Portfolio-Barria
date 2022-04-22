@@ -1,9 +1,9 @@
+/* section projects */
 .section__four {
     padding: 10px;
-    background-color: #f2f2f2;
 
     & h3 {
-        padding: 2rem 0;
+        padding: 2rem;
         font-size: 5em;
         color: $color-black;
     }
@@ -15,7 +15,7 @@
         text-align: center;
         justify-content: center;
         align-items: center;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
 
         .projects {
             background-color: $color-primary;
@@ -55,6 +55,7 @@
                 padding: 1.5rem 2.5rem;
                 background-color: $color-white;
                 border-radius: 10px;
+                border: 1px solid $color-terra;
                 transition: all .3s ease-in-out;
 
                 &:hover {
@@ -65,23 +66,8 @@
     }
 }
 
-@media (max-width: 300px) {
-    .section__four .projects__container {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    }
-
-    .section__four .projects__container .projects .projects__img {
-        height: 150px;
-        width: 150px;
-    }
-}
-
 @media (max-width: 380px) {
     .section__four h3 {
-        font-size: 3em;
-    }
-
-    .section__four p {
-        font-size: 1.8em;
+        font-size: 3rem;
     }
 }

@@ -1,17 +1,17 @@
+/* section home*/
 .hero {
     height: 92vh;
     width: 100%;
-    background: linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%), url(../img/hero.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    background: linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%), url(../img/hero.jpg) no-repeat center;
     background-size: cover;
-    padding: 0 20px;
+    background-attachment: fixed;
 
     .hero__texts {
         height: 92vh;
         width: 100%;
         justify-content: center;
         align-items: flex-start;
+        padding: 0 2rem;
 
         & h1 {
             font-size: 6em;
@@ -19,6 +19,7 @@
         
         & p {
             font-size: 5em;
+            margin-bottom: 1rem;
         }
 
     }
@@ -34,7 +35,7 @@
     }
 }
 
-@media (max-width: 514px) {
+@media (max-width: 700px) {
     .hero {
         height: 100vh;
         

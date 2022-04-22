@@ -1,14 +1,16 @@
+/* buttons */
 .btn {
     display: inline-block;
     padding: 1rem 2rem;
-    background-color: $color-secondary;
-    color: $color-terra;
+    background-color: $color-primary;
+    color: $color-white;
     font-size: 2em;
     border-radius: 10px;
+    border: 1px solid $color-terra;
     transition: all .3s ease-in-out;
 
     &:hover {
-        background-color: $color-primary;
+        background-color: $color-secondary;
     }
 }
 
@@ -16,5 +18,19 @@
     .btn {
         padding: .8rem 1.5rem;
         font-size: 1.5em;
+    }
+}
+
+.gotopbtn {
+    position: fixed;
+    font-size: 5em;
+    bottom: 5rem;
+    right: 5rem;
+}
+
+@media (max-width: 514px) {
+    .gotopbtn {
+        bottom: 2rem;
+        right: 2rem;
     }
 }

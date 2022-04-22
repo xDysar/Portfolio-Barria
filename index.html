@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Lucas Barria</title>
+    <title>Portfolio | Lucas Barria - Desarollador Front-End</title>
     <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
     <!-- SEO -->
     <meta name="keywords" content="Portfolio, Web Design, Web Developer, Desarollo web, pagina web">
-    <meta name="description" content="Lucas Barria...">
+    <meta name="description"
+        content="Lucas Barria es un desarollador web Front-End nacido en Pico Truncado, Santa Cruz. Actualmente residiendo en San Salvador de Jujuy, estudiante de la Carrera de Desarrollo Full Stack.">
     <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css">
     <!-- FONT AWESOME -->
@@ -19,24 +20,24 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="inicio">
         <div class="container">
             <nav class="navbar flex-row">
                 <ul class="menu flex-row">
                     <li class="menu__item">
-                        <a class="menu__link" href="#">Inicio</a>
+                        <a class="menu__link" href="index.html">Inicio</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#">Sobre mi</a>
+                        <a class="menu__link" href="#sobreMi">Sobre mi</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#">Tecnologias</a>
+                        <a class="menu__link" href="#tecnologies">Tecnologias</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#">Proyectos</a>
+                        <a class="menu__link" href="#projects">Proyectos</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#">Contacto</a>
+                        <a class="menu__link" href="#contact">Contacto</a>
                     </li>
                 </ul>
             </nav>
@@ -50,21 +51,23 @@
                     <div class="hero__texts flex-column">
                         <h1>Lucas Barria</h1>
                         <p>Desarollador web</p>
-                        <a href="#" class="btn">Descargar CV</a>
+                        <a href="./downloads/cv_lucas_barria.pdf" download="cv_lucas_barria.pdf" class="btn">Descargar
+                            CV</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section data-aos="fade-right" data-aos-duration="2000" data-aos-easing="ease-in-sine" data-aos-easing="linear" class="section__two flex-row">
+        <section data-aos="fade-right" data-aos-duration="2000" data-aos-easing="ease-in-sine" data-aos-easing="linear"
+            class="section__two flex-row">
             <div class="container">
-                <h2 class="section__two-title">¿Quien soy?</h2>
+                <h2 class="section__two-title" id="sobreMi">¿Quien soy?</h2>
                 <div class="information flex-row">
                     <img src="./img/Lucas Barria.png" alt="Foto de Lucas Barria" class="info__img">
                     <div class="information__texts">
                         <h2 class="info__title">Hola, soy <span class="info__title--blue">Lucas Barria</span>.</h2>
-                        <p class="info__paragraph">Soy un <span class="info__title--blue">Desarollador Front-End</span>,
-                            estudiante de la carrera Full Stack de CoderHouse.</p>
+                        <p class="info__paragraph">Soy <span class="info__title--blue">Desarollador Front-End</span>,
+                            estudiante de la Carrera de Desarrollo Full Stack de CoderHouse</p>
                     </div>
                 </div>
             </div>
@@ -72,8 +75,9 @@
 
         <section class="section__three">
             <div class="container">
-                <div class="tecnologies" data-aos="fade-left" data-aos-duration="2000" data-aos-easing="ease-in-sine" data-aos-easing="linear">
-                    <h3 class="tecnologies__title">Tecnologías</h3>
+                <div class="tecnologies" data-aos="fade-left" data-aos-duration="2000" data-aos-easing="ease-in-sine"
+                    data-aos-easing="linear">
+                    <h3 class="tecnologies__title" id="tecnologies">Tecnologías</h3>
                     <div class="tecnologies__container">
                         <div class="tecnologies__square">
                             <img src="./img/html.png" alt="Logo de HTML" class="tecnogies__logo">
@@ -85,7 +89,7 @@
                         </div>
                         <div class="tecnologies__square">
                             <img src="./img/bootstrap_logo.png" alt="Logo de Bootstrap" class="tecnogies__logo">
-                            <h4>Bootstrap 5</h4>
+                            <h4>Bootstrap</h4>
                         </div>
                         <div class="tecnologies__square">
                             <img src="./img/sass_logo.png" alt="Logo SASS" class="tecnogies__logo">
@@ -104,35 +108,33 @@
             </div>
         </section>
 
-        <section class="section__four" data-aos="fade-right" data-aos-duration="2000" data-aos-easing="ease-in-sine" data-aos-easing="linear">
+        <section class="section__four" data-aos="fade-right" data-aos-duration="2000" data-aos-easing="ease-in-sine"
+            data-aos-easing="linear">
             <div class="container">
-                <h3>Mis proyectos</h3>
+                <h3 id="projects">Mis proyectos</h3>
                 <div class="projects__container">
-
                     <div class="projects">
                         <img src="./img/instituto_noa.png" alt="Logo instituto NOA" class="projects__img">
                         <div class="projects__texts">
                             <h4>Instituto NOA</h4>
                             <p>Desarollado con HTML, CSS, Bootstrap 5 y SASS</p>
-                            <a href="#">Visitar sitio</a>
+                            <a href="https://xdysar.github.io/instituto_noa-barria/" target="_blank">Visitar sitio</a>
                         </div>
                     </div>
-
                     <div class="projects">
                         <img src="./img/instituto_pierre.jpg" alt="Logo instituto Pierre" class="projects__img">
                         <div class="projects__texts">
                             <h4>Instituto Pierre</h4>
                             <p>Desarollado con HTML, CSS, Bootstrap 5 y SASS</p>
-                            <a href="#">Visitar sitio</a>
+                            <a href="https://xdysar.github.io/instituto_noa-barria/" target="_blank">Visitar sitio</a>
                         </div>
                     </div>
-
                     <div class="projects">
                         <img src="./img/jujuy_fashion_music.jpg" alt="Logo Jujuy Fashion Music" class="projects__img">
                         <div class="projects__texts">
                             <h4>Jujuy Fashion Music</h4>
                             <p>Desarollado con HTML, CSS, Bootstrap 5 y SASS</p>
-                            <a href="#">Visitar sitio</a>
+                            <a href="https://xdysar.github.io/instituto_noa-barria/" target="_blank">Visitar sitio</a>
                         </div>
                     </div>
                 </div>
@@ -141,8 +143,9 @@
 
         <section class="section__six">
             <div class="container">
-                <div class="section__animation" data-aos="fade-left" data-aos-duration="2000" data-aos-easing="ease-in-sine" data-aos-easing="linear">
-                    <h3>Contactame</h3>
+                <div class="section__animation" data-aos="fade-left" data-aos-duration="2000"
+                    data-aos-easing="ease-in-sine" data-aos-easing="linear">
+                    <h3 id="contact">Contactame</h3>
                     <div class="form__container">
                         <form class="form">
                             <input type="text" placeholder="Nombre*" class="form__input">
@@ -155,6 +158,7 @@
                 </div>
             </div>
         </section>
+        <a class="gotopbtn fa-solid fa-circle-arrow-up" href="#inicio"></a>
     </main>
 
     <footer class="footer">

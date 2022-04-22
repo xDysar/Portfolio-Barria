@@ -1,3 +1,4 @@
+/* header */
 .header {
     background-color: $color-primary;
     padding: 0 20px;
@@ -17,7 +18,7 @@
         padding: 1rem 1.5rem;
         border-bottom: 1px solid $color-primary;
         font-size: 2em;
-        color: $color-terra;
+        color: $color-white;
         transition: all .3s ease-in-out;
         border-radius: 1rem;
 
@@ -28,13 +29,9 @@
         }
     }
 }
-@media (max-width: 514px) {
+
+@media (max-width: 700px) {
     .navbar {
         display: none;
-    }
-}
-@media (max-width: 690px) {
-    .menu .menu__link {
-        font-size: 1.2em;
     }
 }
