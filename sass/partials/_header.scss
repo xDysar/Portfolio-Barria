@@ -1,7 +1,7 @@
 /* header */
 .header {
     background-color: $color-primary;
-    padding: 0 20px;
+    padding: 0 2rem;
 }
 .navbar {
     height: 8rem;
@@ -10,27 +10,27 @@
 }
 
 .menu {
-    gap: 15px;
+    gap: 1.5rem;
     justify-content: center;
     align-items: center;
 
     .menu__link {
         padding: 1rem 1.5rem;
-        border-bottom: 1px solid $color-primary;
+        border: 1px solid $color-primary;
         font-size: 2em;
         color: $color-white;
         transition: all .3s ease-in-out;
         border-radius: 1rem;
 
         &:hover {
-            border-bottom: 1px solid $color-white;
+            border: 1px solid $color-terra;
             background-color: $color-white;
             color: $color-black;
         }
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 712px) {
     .navbar {
         display: none;
     }

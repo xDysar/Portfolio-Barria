@@ -1,6 +1,6 @@
 /* section information */
 .section__two {
-    padding: 10px;
+    padding: 1rem;
     justify-content: center;
     align-items: center;
     
@@ -8,20 +8,20 @@
         color: $color-black;
         font-size: 5em;
         text-align: center;
-        padding: 2rem 0;
+        padding: 2rem;
     }
 
     .information {
         flex-basis: 30%;
         justify-content: center;
         align-items: center;
-        gap: 0 20px;
+        gap: 0 2rem;
     }
 
     .info__img {
-        padding: 10px;
-        height: 250px;
-        width: 250px;
+        padding: 1rem;
+        height: 25rem;
+        width: 25rem;
         border-radius: 50%;
     }
     

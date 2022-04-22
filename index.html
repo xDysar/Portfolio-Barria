@@ -8,9 +8,9 @@
     <title>Portfolio | Lucas Barria - Desarollador Front-End</title>
     <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
     <!-- SEO -->
-    <meta name="keywords" content="Portfolio, Web Design, Web Developer, Desarollo web, pagina web">
+    <meta name="keywords" content="Portfolio, Web Design, Web Developer, Desarollo web, Pagina web, Front-End, HTML, CSS, SASS, Bootstrap, Git, GitHub">
     <meta name="description"
-        content="Lucas Barria es un desarollador web Front-End nacido en Pico Truncado, Santa Cruz. Actualmente residiendo en San Salvador de Jujuy, estudiante de la Carrera de Desarrollo Full Stack.">
+        content="Lucas Barria es un desarollador web Front-End, estudiante de la Carrera de Desarrollo Full Stack de CoderHouse. Nacido en Pico Truncado, Santa Cruz, actualmente residiendo en San Salvador de Jujuy.">
     <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css">
     <!-- FONT AWESOME -->
@@ -20,6 +20,7 @@
 </head>
 
 <body>
+    <!-- HEADER -->
     <header class="header" id="inicio">
         <div class="container">
             <nav class="navbar flex-row">
@@ -44,20 +45,22 @@
         </div>
     </header>
 
+    <!-- MAIN -->
     <main class="main">
         <section class="section__one">
             <div class="hero">
                 <div class="container">
                     <div class="hero__texts flex-column">
                         <h1>Lucas Barria</h1>
-                        <p>Desarollador web</p>
+                        <p>Desarollador Front-End</p>
                         <a href="./downloads/cv_lucas_barria.pdf" download="cv_lucas_barria.pdf" class="btn">Descargar
                             CV</a>
                     </div>
                 </div>
             </div>
         </section>
-
+        
+        <!-- SECTION INFORMATION -->
         <section data-aos="fade-right" data-aos-duration="2000" data-aos-easing="ease-in-sine" data-aos-easing="linear"
             class="section__two flex-row">
             <div class="container">
@@ -73,6 +76,7 @@
             </div>
         </section>
 
+        <!-- SECTION TECNOLOGIES -->
         <section class="section__three">
             <div class="container">
                 <div class="tecnologies" data-aos="fade-left" data-aos-duration="2000" data-aos-easing="ease-in-sine"
@@ -108,6 +112,7 @@
             </div>
         </section>
 
+        <!-- SECTION PROJECTS -->
         <section class="section__four" data-aos="fade-right" data-aos-duration="2000" data-aos-easing="ease-in-sine"
             data-aos-easing="linear">
             <div class="container">
@@ -141,6 +146,7 @@
             </div>
         </section>
 
+        <!-- SECTION CONTACT -->
         <section class="section__six">
             <div class="container">
                 <div class="section__animation" data-aos="fade-left" data-aos-duration="2000"
@@ -150,7 +156,7 @@
                         <form class="form">
                             <input type="text" placeholder="Nombre*" class="form__input">
                             <input type="email" placeholder="Email*" class="form__input">
-                            <textarea class="form__input--message"></textarea>
+                            <textarea class="form__input--message" placeholder="Escribe el mensaje aqui*"></textarea>
                             <input type="submit" class="form__cta">
                         </form>
                         <img src="./img/hand_coding.svg" alt="Foto de laptop" class="form__img">
@@ -161,11 +167,12 @@
         <a class="gotopbtn fa-solid fa-circle-arrow-up" href="#inicio"></a>
     </main>
 
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="foo">
                 <h5 class="foo__title">Lucas Barria</h5>
-                <p class="foo__p">Web Developer</p>
+                <p class="foo__p">Desarollador Front-End</p>
                 <p class="foo__email"><span class="fa-solid fa-envelope"></span>lucasbnicolas@gmail.com</p>
                 <div class="foo__brands">
                     <a class="fa-brands fa-github" href="https://github.com/xDysar" target="_blank"></a>
@@ -176,6 +183,7 @@
         </div>
     </footer>
 
+    <!-- AOS ANIMATION -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

@@ -1,11 +1,12 @@
 /* section contact */
 .section__six {
-    padding: 10px;
+    padding: 1.1rem;
     background-color: #813B81;
     
     & h3 {
-        padding: 2rem 0;
+        padding: 2rem;
         font-size: 5em;
+        text-align: center;
         color: $color-black;
     }
 
@@ -13,7 +14,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 10px;
+        gap: 1rem;
 
         .form__img {
             width: 100%;
@@ -23,18 +24,19 @@
 
 
     .form {
-        padding: 10px;
+        padding: 1rem;
         display: grid;
         width: 40rem;
         height: 40rem;
-        gap: 10px;
+        gap: 1rem;
 
         .form__input {
             font-size: 1.8em;
+            padding: 0 1rem;
             outline: none;
             border: none;
             border: 1px solid $color-terciary;
-            border-radius: 7px;
+            border-radius: 1rem;
 
             &:focus {
                 border: 1px solid $color-terciary;
@@ -42,10 +44,15 @@
         }
 
         .form__input--message {
-            padding: 50px;
+            padding: 5rem;
             resize: none;
             padding: 2.8em 1.5em;
             margin-bottom: 1em;
+            font-size: 1.8em;
+
+            &:focus-visible {
+                outline: 0;
+            }
         }
 
     }
@@ -56,7 +63,7 @@
         color: #fff;
         font-size: 2rem;
         border: none;
-        border-radius: 5px;
+        border-radius: .5rem;
         border: 1px solid $color-terra;
         cursor: pointer;
         font-weight: 400;

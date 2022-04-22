@@ -5,7 +5,7 @@
     background-color: $color-primary;
     color: $color-white;
     font-size: 2em;
-    border-radius: 10px;
+    border-radius: 1rem;
     border: 1px solid $color-terra;
     transition: all .3s ease-in-out;
 
@@ -16,7 +16,7 @@
 
 @media (max-width: 300px) {
     .btn {
-        padding: .8rem 1.5rem;
+        padding: 1rem 1.5rem;
         font-size: 1.5em;
     }
 }
