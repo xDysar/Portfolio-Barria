@@ -1,38 +1,46 @@
 /* section contact */
 .section__six {
-    padding: 1.1rem;
+    height: 100vh;
     background-color: #813B81;
     
     & h3 {
         padding: 2rem;
-        font-size: 5em;
+        font-size: 6em;
         text-align: center;
-        color: $color-black;
+        color: $color-white;
     }
 
-    .form__container {
+    .formulario__container {
+        height: 90vh;
+        padding: 0 2rem;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        gap: 1rem;
 
-        .form__img {
-            width: 100%;
-            max-width: 35rem;
+        .form__content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            column-gap: 20rem;
+    
+            .form__img {
+                width: 100%;
+                max-width: 45rem;
+            }
         }
     }
-
 
     .form {
         padding: 1rem;
         display: grid;
-        width: 40rem;
-        height: 40rem;
+        width: 50rem;
+        height: 50rem;
         gap: 1rem;
 
         .form__input {
             font-size: 1.8em;
-            padding: 0 1rem;
+            padding: 1rem;
             outline: none;
             border: none;
             border: 1px solid $color-terciary;
@@ -44,6 +52,7 @@
         }
 
         .form__input--message {
+            border-radius: 1rem;
             padding: 5rem;
             resize: none;
             padding: 2.8em 1.5em;
@@ -68,21 +77,27 @@
         cursor: pointer;
         font-weight: 400;
         transition: all .3s ease-in-out;
-    
+        
         &:hover {
             background-color: $color-secondary;
         }
     }
 }
-@media (max-width: 250px) {
-    .section__six .form .form__input {
-        font-size: 1.5em;
-    }
+
+.gohome {
+    position: fixed;
+    font-size: 5em;
+    bottom: 5rem;
+    right: 5rem;
 }
 
-@media (max-width: 380px) {
-    .section__six h3 {
-        font-size: 3em;
+@media (max-width: 920px) {
+    .section__six .formulario__container .form__content {
+        column-gap: 5rem;
+    }
+    
+    .section__six .formulario__container .form__content .form__img {
+        max-width: 35rem;
     }
 }
 
@@ -95,3 +110,46 @@
         display: none;
     }
 }
+
+@media (max-width: 514px) {
+    .section__six .form {
+        width: 40rem;
+        height: 40rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .section__six h3 {
+        font-size: 3em;
+    }
+
+    .section__six .form .form__input--message {
+        padding: 1em 1.5em;
+    }
+
+    .section__six .form {
+        width: 32rem;
+        height: 32rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .section__six .form {
+        width: 25rem;
+        height: 25rem;
+    }
+}
+
+@media (max-width: 250px) {
+    .section__six .form .form__input {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-height: 514px) {
+    .section__six .form {
+        height: 30rem;
+    }
+}
+
+
