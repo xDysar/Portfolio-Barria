@@ -53,8 +53,8 @@ html {
 
 @media (max-width: 300px) {
   .btn, .section__four .projects__container .projects__texts a {
-    padding: 1rem 1.5rem;
-    font-size: 1.5em; } }
+    padding: .8rem 1.5rem;
+    font-size: 1.4em; } }
 
 .gotopbtn {
   position: fixed;
@@ -135,12 +135,17 @@ html {
       margin-bottom: 1rem;
       color: #9D32CF;
       font-weight: 500; }
+    .hero .hero__texts .hero__buttons {
+      display: flex;
+      column-gap: 1rem; }
 
 @media (max-width: 380px) {
   .hero .hero__texts h1 {
     font-size: 4em; }
   .hero .hero__texts p {
-    font-size: 3em; } }
+    font-size: 3em; }
+  .btn, .section__four .projects__container .projects__texts a {
+    font-size: 1.5em; } }
 
 /* section information */
 .section__two {
@@ -295,7 +300,7 @@ html {
   .section__four h3 {
     font-size: 3rem; } }
 
-/* section contact */
+/* section contact pages*/
 .section__six {
   height: 100vh;
   background-color: #813B81; }
