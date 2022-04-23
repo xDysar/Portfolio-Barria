@@ -66,3 +66,9 @@
         font-size: 3rem;
     }
 }
+
+@media (max-width: 640px) {
+    .section__four h3 {
+        text-align: center;
+    }
+}

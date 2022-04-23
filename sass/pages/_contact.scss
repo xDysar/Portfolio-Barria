@@ -2,7 +2,7 @@
 .section__six {
     height: 100vh;
     background-color: #813B81;
-    
+
     & h3 {
         padding: 2rem;
         font-size: 6em;
@@ -23,7 +23,7 @@
             justify-content: space-between;
             align-items: center;
             column-gap: 20rem;
-    
+
             .form__img {
                 width: 100%;
                 max-width: 45rem;
@@ -77,7 +77,7 @@
         cursor: pointer;
         font-weight: 400;
         transition: all .3s ease-in-out;
-        
+
         &:hover {
             background-color: $color-secondary;
         }
@@ -89,13 +89,18 @@
     font-size: 5em;
     bottom: 5rem;
     right: 5rem;
+    transition: transform .3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 @media (max-width: 920px) {
     .section__six .formulario__container .form__content {
         column-gap: 5rem;
     }
-    
+
     .section__six .formulario__container .form__content .form__img {
         max-width: 35rem;
     }
@@ -106,6 +111,7 @@
         justify-content: center;
         align-items: center;
     }
+
     .form__img {
         display: none;
     }
@@ -120,6 +126,7 @@
     .gohome {
         bottom: 2rem;
         right: 2rem;
+        transition: transform .3s ease-in-out;
     }
 }
 
@@ -156,5 +163,3 @@
         height: 30rem;
     }
 }
-
-

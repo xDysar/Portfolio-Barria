@@ -54,15 +54,14 @@
 
 }
 
-// @media (max-width: 300px) {
-//     .section__three .tecnologies__container {
-//         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-//     }
-// }
-
 @media (max-width: 1000px) {
     .section__three .tecnologies__container {
         grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    }
+}
+@media (max-width: 640px) {
+    .section__three .tecnologies .tecnologies__title {
+        text-align: center;
     }
 }
 
