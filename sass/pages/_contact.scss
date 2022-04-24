@@ -1,165 +1,73 @@
 /* section contact pages*/
-.section__six {
+.section__contact{
+    background-image: linear-gradient( 83.2deg,  rgba(150,93,233,1) 10.8%, rgba(99,88,238,1) 94.3% );
     height: 100vh;
-    background-color: #813B81;
+    width: 100%;
 
-    & h3 {
-        padding: 2rem;
-        font-size: 6em;
-        text-align: center;
-        color: $color-white;
-    }
-
-    .formulario__container {
-        height: 90vh;
-        padding: 0 2rem;
-        display: flex;
-        flex-direction: column;
+    .form__position {
+        height: 100vh;
         justify-content: center;
         align-items: center;
 
-        .form__content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            column-gap: 20rem;
-
-            .form__img {
+        .form {
+            background-color: #fff;
+            width: 90%;
+            max-width: 40rem;
+            border-radius: 1rem;
+            padding: 5rem 2rem;
+    
+            .form__container {
                 width: 100%;
-                max-width: 45rem;
+                display: grid;
+                gap: 1rem;
+                grid-auto-columns: 100%;
+                font-family: 'Montserrat', sans-serif;
+    
+                .form__title {
+                    color: $color-black;
+                    text-align: center;
+                    font-size: $font-title;
+                    margin-bottom: 1rem;
+                }
+    
+                .form__input {
+                    font-family: inherit;
+                    font-size: 1.6em;
+                    padding: 1rem 1.6rem;
+                    outline: none;
+                    border: none;
+                    border: 1px solid $color-terra;
+                    border-radius: .5rem;
+                }
+    
+                .form__message {
+                    @extend .form__input;
+                    resize: none;
+                    padding: 2.5rem 1.5rem;
+                }
+    
+                .form__cta {
+                    @extend .btn;
+                    font-family: 'Montserrat', sans-serif;
+                }
             }
-        }
-    }
-
-    .form {
-        padding: 1rem;
-        display: grid;
-        width: 50rem;
-        height: 50rem;
-        gap: 1rem;
-
-        .form__input {
-            font-size: 1.8em;
-            padding: 1rem;
-            outline: none;
-            border: none;
-            border: 1px solid $color-terciary;
-            border-radius: 1rem;
-
-            &:focus {
-                border: 1px solid $color-terciary;
-            }
-        }
-
-        .form__input--message {
-            border-radius: 1rem;
-            padding: 5rem;
-            resize: none;
-            padding: 2.8em 1.5em;
-            margin-bottom: 1em;
-            font-size: 1.8em;
-
-            &:focus-visible {
-                outline: 0;
-            }
-        }
-
-    }
-
-    .form__cta {
-        font-family: inherit;
-        background-color: $color-terciary;
-        color: #fff;
-        font-size: 2rem;
-        border: none;
-        border-radius: .5rem;
-        border: 1px solid $color-terra;
-        cursor: pointer;
-        font-weight: 400;
-        transition: all .3s ease-in-out;
-
-        &:hover {
-            background-color: $color-secondary;
         }
     }
 }
 
 .gohome {
-    position: fixed;
-    font-size: 5em;
-    bottom: 5rem;
-    right: 5rem;
-    transition: transform .3s ease-in-out;
-
-    &:hover {
-        transform: scale(1.1);
-    }
+    @extend .gotopbtn;
 }
 
-@media (max-width: 920px) {
-    .section__six .formulario__container .form__content {
-        column-gap: 5rem;
-    }
-
-    .section__six .formulario__container .form__content .form__img {
-        max-width: 35rem;
-    }
-}
-
-@media (max-width: 640px) {
-    .section__six .form__container {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .form__img {
-        display: none;
+@media (max-width: 380px) {
+    .section__contact .form__position .form .form__container .form__title {
+        font-size: 3em;
     }
 }
 
 @media (max-width: 514px) {
-    .section__six .form {
-        width: 40rem;
-        height: 40rem;
-    }
-
     .gohome {
         bottom: 2rem;
         right: 2rem;
-        transition: transform .3s ease-in-out;
-    }
-}
-
-@media (max-width: 380px) {
-    .section__six h3 {
-        font-size: 3em;
-    }
-
-    .section__six .form .form__input--message {
-        padding: 1em 1.5em;
-    }
-
-    .section__six .form {
-        width: 32rem;
-        height: 32rem;
-    }
-}
-
-@media (max-width: 300px) {
-    .section__six .form {
-        width: 25rem;
-        height: 25rem;
-    }
-}
-
-@media (max-width: 250px) {
-    .section__six .form .form__input {
-        font-size: 1.5em;
-    }
-}
-
-@media (max-height: 514px) {
-    .section__six .form {
-        height: 30rem;
     }
 }

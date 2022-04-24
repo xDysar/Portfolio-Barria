@@ -1,6 +1,7 @@
 /* buttons */
 .btn {
     display: inline-block;
+    cursor: pointer;
     padding: 1rem 2rem;
     background-color: $color-primary;
     color: $color-white;
@@ -26,6 +27,7 @@
     font-size: 5em;
     bottom: 5rem;
     right: 5rem;
+    z-index: 1;
     transition: transform .3s ease-in-out;
 
     &:hover {
